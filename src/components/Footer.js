@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="social-icons">
+      <div class="hstack gap-3 justify-content-center">
         <i className="fab fa-facebook fs-3"></i>
         <i className="fab fa-linkedin fs-3"></i>
         <i className="fab fa-twitter fs-3"></i>
