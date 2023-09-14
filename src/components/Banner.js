@@ -20,9 +20,11 @@ function Banner({ onSearch, query, setSearchQuery, movie, isHomePage }) {
     window.location.reload();
   };
 
+
   return (
     <div>
       {isHomePage && movie && (
+
         <div
           style={{
             position: "relative",
@@ -127,7 +129,7 @@ function Banner({ onSearch, query, setSearchQuery, movie, isHomePage }) {
                 alignItems: "center",
                 backgroundColor: "#BE173C",
                 width: "230px",
-                marginTop: "16px", 
+                marginTop: "16px",
               }}
             >
               <img
