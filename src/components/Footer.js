@@ -1,23 +1,21 @@
-import React from "react";
 
-function Footer() {
+
+const Footer = () => {
   return (
     <div className="footer">
       <div className="social-icons">
-        <i className="fab fa-facebook"></i>
-        <i className="fab fa-linkedin"></i>
-        <i className="fab fa-twitter"></i>
+        <i className="fab fa-facebook fs-3"></i>
+        <i className="fab fa-linkedin fs-3"></i>
+        <i className="fab fa-twitter fs-3"></i>
       </div>
-      <div className="paragraph">
+
+      <div class="hstack gap-3 justify-content-center mt-2">
         <p>Conditions of Use</p>
-      </div>
-      <div className="paragraph">
         <p>Privacy & Policy</p>
-      </div>
-      <div className="paragraph">
         <p>Press Room</p>
       </div>
-      <p className="copyright">&copy; 2023 Movie Box by Damaris</p>
+
+      <small> &copy; 2023 Movie Box by Osiota Samuel Obrozie</small>
     </div>
   );
 }

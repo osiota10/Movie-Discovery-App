@@ -11,9 +11,12 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import "./index.css";
 
+
+
+
 const API_KEY = "86ebf7fd8bd539073185a360072ca76a";
 const API_URL = "https://api.themoviedb.org/3";
-const TOP_MOVIES_URL = `${API_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
+const TOP_MOVIES_URL = `${API_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=2`;
 
 function App() {
   const [topMovies, setTopMovies] = useState([]);
@@ -66,8 +69,7 @@ function App() {
   const fetchRandomMovie = async () => {
     try {
       const response = await fetch(
-        `${API_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=${
-          Math.floor(Math.random() * 10) + 1
+        `${API_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=${Math.floor(Math.random() * 10) + 1
         }`
       );
 
