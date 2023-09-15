@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -106,7 +106,7 @@ function App() {
             }
           />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />} />
-          <Footer />
+          {/* <Footer /> */}
         </Routes>
       </div>
       <Footer />
